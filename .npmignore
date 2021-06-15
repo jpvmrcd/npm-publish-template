@@ -1,0 +1,9 @@
+coverage
+src
+tests
+.eslintrc.json
+.github
+.editorconfig
+tsconfig.json
+webpack.config.js
+babel.config.json
