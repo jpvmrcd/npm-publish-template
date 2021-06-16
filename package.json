@@ -1,6 +1,6 @@
 {
   "name": "@jpvmrcd/publish-test",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "publish-test-description",
   "keywords": [
     "publish-test-keyword"
@@ -10,7 +10,8 @@
   "scripts": {
     "build": "webpack",
     "lint": "npx eslint src/** tests/**",
-    "test": "jest"
+    "test": "jest",
+    "publish": "npm run publish -- --access public"
   },
   "repository": {
     "type": "git",
