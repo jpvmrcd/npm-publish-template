@@ -4,10 +4,10 @@ module.exports = {
   entry: './src/index.ts',
   output: {
     clean: true,
-    filename: 'publshtest.js',
+    filename: 'publishtest.js',
     path: path.resolve(__dirname, 'dist'),
     library: {
-      name: 'publshtest',
+      name: 'publishtest',
       type: 'umd',
     },
   },
@@ -23,6 +23,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
+    alias: {
+      '@jpvmrcd/publish-test': path.resolve(__dirname, 'dist'),
+    },
   },
   devServer: {
     contentBase: './dist',

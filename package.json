@@ -1,12 +1,15 @@
 {
   "name": "@jpvmrcd/publish-test",
-  "version": "0.1.1",
+  "version": "0.0.0",
   "description": "publish-test-description",
   "keywords": [
     "publish-test-keyword"
   ],
-  "main": "./dist/publshtest.js",
-  "types": "./dist/publshtest.d.ts",
+  "main": "./dist/publishtest.js",
+  "types": "./dist/publishtest.d.ts",
+  "files": [
+    "dist/**"
+  ],
   "scripts": {
     "build": "webpack",
     "lint": "npx eslint src/** tests/**",
