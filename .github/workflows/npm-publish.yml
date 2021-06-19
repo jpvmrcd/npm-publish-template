@@ -34,13 +34,18 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      - run: npm ci
+      - run: npm ci --ignore-scripts
       - run: npm run lint
       - run: npm test
       - name: Coveralls GitHub Action
         uses: coverallsapp/github-action@8cbef1dea373ebce56de0a14c68d6267baa10b44
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Compressed size action
+        if: github.event_name == 'pull_request'
+        uses: preactjs/compressed-size-action@v1
+        with:
+          repo-token: '${{ secrets.GITHUB_TOKEN }}'
 
 
   publish-npm:
@@ -61,7 +66,8 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - run: npm ci
+      - run: npm ci --ignore-scripts
+      - run: npm run build
       - uses: mikeal/merge-release@7f590a5adf6e9def8e399a0a569d22d0de016dc0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
