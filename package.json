@@ -11,6 +11,7 @@
     "build": "webpack",
     "lint": "npx eslint src/** tests/**",
     "test": "jest",
+    "prepare": "npm run build",
     "publish": "npm publish --access public"
   },
   "repository": {
