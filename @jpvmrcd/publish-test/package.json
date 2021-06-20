@@ -1,0 +1,6 @@
+{
+  "name": "@jpvmrcd/publish-test",
+  "main": "../dist/publishtest.js",
+  "types": "../dist/publishtest.d.ts",
+  "private": true
+}

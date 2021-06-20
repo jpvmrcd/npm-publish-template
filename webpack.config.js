@@ -23,9 +23,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
-    alias: {
-      '@jpvmrcd/publish-test': path.resolve(__dirname, 'dist'),
-    },
   },
   devServer: {
     contentBase: './dist',
