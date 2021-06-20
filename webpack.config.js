@@ -1,15 +1,9 @@
 const path = require('path');
+const { merge } = require('webpack-merge');
 
-module.exports = {
+const base = {
   entry: './src/index.ts',
   output: {
-    clean: true,
-    filename: 'publishtest.js',
-    path: path.resolve(__dirname, 'dist'),
-    library: {
-      name: 'publishtest',
-      type: 'umd',
-    },
   },
   target: 'es5',
   module: {
@@ -23,12 +17,29 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.js'],
-    alias: {
-      '@jpvmrcd/publish-test': path.resolve(__dirname, 'dist'),
-    },
-  },
-  devServer: {
-    contentBase: './dist',
   },
   mode: 'production',
 };
+
+module.exports = [
+  merge(base, {
+    output: {
+      clean: true,
+      filename: 'publishtest.js',
+      path: path.resolve(__dirname, 'dist'),
+      library: {
+        name: 'publishtest',
+        type: 'umd',
+      },
+    },
+  }),
+  merge(base, {
+    output: {
+      filename: 'index.js',
+      path: path.resolve(__dirname, ''),
+    },
+    optimization: {
+      minimize: false,
+    },
+  }),
+];
