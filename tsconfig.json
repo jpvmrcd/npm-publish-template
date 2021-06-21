@@ -2,12 +2,13 @@
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
     "declaration": true,
-    "declarationDir": "dist",
-    "declarationMap": true,
+    "declarationDir": "",
     "target": "es5"
   },
   "exclude": [
     "tests/**",
-    "dist"
+    "dist",
+    "index.js",
+    "index.d.ts"
   ]
 }
