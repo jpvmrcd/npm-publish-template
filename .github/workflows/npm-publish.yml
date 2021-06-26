@@ -43,7 +43,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Compressed size action
         if: github.event_name == 'pull_request'
-        uses: preactjs/compressed-size-action@v1
+        uses: preactjs/compressed-size-action@v2
         with:
           repo-token: '${{ secrets.GITHUB_TOKEN }}'
 
