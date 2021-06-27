@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://www.github.com/jpvmrcd/npm-publish-template/compare/v0.2.0...v0.3.0) (2021-06-27)
+
+
+### Features
+
+* rename from test to template ([6120df0](https://www.github.com/jpvmrcd/npm-publish-template/commit/6120df0c3d10cd9c306de1325863a24ed0bad9c3))
+
 ## [0.2.0](https://www.github.com/jpvmrcd/npm-publish-template/compare/v0.1.13...v0.2.0) (2021-06-27)
 
 
