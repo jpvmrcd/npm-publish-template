@@ -1,9 +1,11 @@
 {
-  "name": "@jpvmrcd/publish-test",
+  "name": "@jpvmrcd/npm-publish-template",
   "version": "0.2.0",
-  "description": "publish-test-description",
+  "description": "npm-publish-template-description",
   "keywords": [
-    "publish-test-keyword"
+    "npm",
+    "publish",
+    "template"
   ],
   "main": "./index.js",
   "types": "./index.d.ts",
@@ -22,14 +24,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jpvmrcd/publish-test.git"
+    "url": "https://github.com/jpvmrcd/npm-publish-template.git"
   },
   "author": "jpmrcd",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jpvmrcd/publish-test/issues"
+    "url": "https://github.com/jpvmrcd/npm-publish-template/issues"
   },
-  "homepage": "https://github.com/jpvmrcd/publish-test#readme",
+  "homepage": "https://github.com/jpvmrcd/npm-publish-template#readme",
   "devDependencies": {
     "@babel/core": "7.14.6",
     "@babel/preset-env": "7.14.7",

@@ -1,13 +1,13 @@
-export interface PublishTestOptions {
+export interface TestClassOptions {
   isTrue: boolean;
 }
 
-export class PublishTest {
+export class TestClass {
   public element: HTMLElement;
 
-  public options: PublishTestOptions;
+  public options: TestClassOptions;
 
-  constructor(el: HTMLElement, opts: PublishTestOptions) {
+  constructor(el: HTMLElement, opts: TestClassOptions) {
     this.element = el;
     this.options = opts;
   }
