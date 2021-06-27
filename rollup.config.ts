@@ -3,9 +3,9 @@ import { terser } from 'rollup-plugin-terser';
 export default {
   input: 'index.js',
   output: [{
-    file: 'dist/publishtest.min.js',
+    file: 'dist/npm-publish-template.min.js',
     format: 'iife',
-    name: 'publishtest',
+    name: 'npmpublishtemplate',
     plugins: [terser()],
   }],
 };
