@@ -13,7 +13,7 @@ export class PublishTest {
   }
 
   public test(): HTMLElement {
-    this.options.isTrue = false;
+    this.options.isTrue = true;
     return this.element;
   }
 }
